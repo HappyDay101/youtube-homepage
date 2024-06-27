@@ -1,9 +1,14 @@
 import colors from "tailwindcss/colors"
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -14,9 +19,9 @@ module.exports = {
           border: colors.neutral[400],
           text: colors.neutral[500],
           dark: colors.neutral[800],
-          ["dark-hover"]: colors.neutral[900]
-        }
-      }
+          ["dark-hover"]: colors.neutral[900],
+        },
+      },
     },
   },
   plugins: [],
