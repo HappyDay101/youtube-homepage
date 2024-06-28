@@ -16,7 +16,7 @@ export function PageHeader() {
       </div>
 
       {/* mid-section of header */}
-      <form className="flex gap-4 flex-grow justify-center items-center">
+      <form className="md:flex hidden gap-4 flex-grow justify-center items-center">
         <div className="flex flex-grow max-w-[600px]">
           <input
             type="search"
@@ -34,6 +34,12 @@ export function PageHeader() {
 
       {/* Right Side of header */}
       <div className="flex flex-shrink-0 md:gap-2 items-center">
+        <Button size="icon" variant="ghost" className="md:hidden">
+          <Search />
+        </Button>
+        <Button size="icon" variant="ghost" className="md:hidden">
+          <Mic />
+        </Button>
         <Button size="icon" variant="ghost">
           <Upload />
         </Button>
