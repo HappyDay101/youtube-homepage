@@ -16,14 +16,14 @@ export function PageHeader() {
       </div>
 
       {/* mid-section of header */}
-      <form className="flex gap-4 flex-grow justify-center">
+      <form className="flex gap-4 flex-grow justify-center items-center">
         <div className="flex flex-grow max-w-[600px]">
           <input
             type="search"
             placeholder="Search"
             className="rounded-l-full border border-secondary-border shadow-inner shadow-secondary py-1 px-4 text-lg w-full focus:border-blue-500 outline-none"
           />
-          <Button>
+          <Button className="py-2 px-4 rounded-r-full border-secondary-border border border-1-0" flex-shrink-0>
             <Search />
           </Button>
         </div>
@@ -33,7 +33,7 @@ export function PageHeader() {
       </form>
 
       {/* Right Side of header */}
-      <div className="flex flex-shrink-0 md:gap-2">
+      <div className="flex flex-shrink-0 md:gap-2 items-center">
         <Button size="icon" variant="ghost">
           <Upload />
         </Button>
